@@ -1,0 +1,17 @@
+{
+  "name": "pr-blast-radius-safety-copilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "node --env-file-if-exists=.env demo.mjs",
+    "ui": "node --env-file-if-exists=.env server.mjs",
+    "seed:graph": "node --env-file-if-exists=.env graph/seed.mjs",
+    "verify:daytona": "node --env-file-if-exists=.env scripts/verify-daytona.mjs",
+    "test:fixture": "node --test fixture/test/*.test.js"
+  },
+  "dependencies": {
+    "@daytona/sdk": "^0.227.0",
+    "neo4j-driver": "^6.0.1"
+  }
+}
